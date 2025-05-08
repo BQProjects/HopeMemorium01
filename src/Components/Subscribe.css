@@ -1,0 +1,36 @@
+.subscribe {
+    width: 40vw;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 30px;
+    padding: 4px;
+}
+
+.subscribe input{
+    border: none;
+    width: 70%;
+    outline: none;
+    padding: 0.5rem;
+    font-size: medium;
+    padding-left: 1rem;
+}
+
+.subscribe button {
+    height: 2.2rem;
+    width: 30%;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: rgba(61, 42, 68, 1);
+    cursor: pointer;
+    color: white;
+    margin-right: 20px;
+}
+
+span {
+    font-weight: bold;
+}
+
