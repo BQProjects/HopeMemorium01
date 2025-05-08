@@ -8,6 +8,7 @@ function App() {
   const { t, i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
+    console.log("sdjgkucvgsud");
     i18n.changeLanguage(lng);
     document.documentElement.lang = lng; // Set <html lang="he"> dynamically
     if (lng === "he" || lng === "ar") {
