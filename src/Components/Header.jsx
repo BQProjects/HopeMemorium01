@@ -24,7 +24,12 @@ const Header = () => {
           <a onClick={() => navigate("/journey")}>{t("nav6")}</a>
         </div>
         <div>
-          <button className="btn z-20 text-black">{t("enquiry_button")}</button>
+          <button
+            onClick={() => navigate("/journey")}
+            className="btn z-20 text-black"
+          >
+            • {t("enquiry_button")}
+          </button>
         </div>
       </div>
     </div>

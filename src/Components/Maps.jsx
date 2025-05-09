@@ -691,7 +691,7 @@ const Maps = () => {
             }}
             className=" px-2"
           >
-            <p2> {t("maps_h1")}</p2>
+            <p>• {t("maps_h1")}</p>
           </div>
           <div className="w-[90%] mt-6 flex items-center justify-between mb-14">
             <div className="w-[30%] p-2 flex flex-col justify-start items-center h-[50vh] bg-white rounded-xl">
@@ -710,7 +710,7 @@ const Maps = () => {
                 }}
                 className=" px-3"
               >
-                <p2> {t("maps_h2")}</p2>
+                <p>• {t("maps_h2")}</p>
               </div>
               <p className="text-xs w-[85%] mt-4">
                 {t("maps_p1")}
@@ -740,7 +740,7 @@ const Maps = () => {
                 }}
                 className=" px-3"
               >
-                <p2> {t("maps_h3")}</p2>
+                <p>• {t("maps_h3")}</p>
               </div>
               <p className="text-xs mt-4 w-[85%]">{t("maps_p10")}</p>
             </div>
@@ -760,21 +760,31 @@ const Maps = () => {
                 }}
                 className=" px-3"
               >
-                <p2> {t("maps_h4")}</p2>
+                <p>• {t("maps_h4")}</p>
               </div>
-              <p className="text-xs w-[85%] mt-4">
-                • {t("maps_p11")}
-                <span>{t("maps_p12")}</span>
-                {t("maps_p13")}
-                <span>{t("maps_p14")}</span>
-                {t("maps_p15")}
+              <p className="text-xs w-[85%] mt-4 flex items-start gap-2">
+                <div>• </div>{" "}
+                <div>
+                  {t("maps_p11")}
+                  <span>{t("maps_p12")}</span>
+                  {t("maps_p13")}
+                  <span>{t("maps_p14")}</span>
+                  {t("maps_p15")}
+                </div>
               </p>
-              <p className="text-xs w-[85%] mt-1">
-                • {t("maps_p16")}
-                <span>{t("maps_p17")}</span>
-                {t("maps_p18")}
+              <p className="text-xs w-[85%] mt-1 flex items-start gap-2">
+                <div>• </div>
+                <div>
+                  {t("maps_p16")}
+                  <span>{t("maps_p17")}</span>
+                  {t("maps_p18")}
+                </div>
               </p>
-              <p className="text-xs w-[85%] mt-1">• {t("maps_p19")}</p>
+              <p className="text-xs w-[85%] mt-1 flex items-start gap-2">
+                {" "}
+                <div>• </div>
+                <div>{t("maps_p19")}</div>
+              </p>
             </div>
           </div>
         </div>

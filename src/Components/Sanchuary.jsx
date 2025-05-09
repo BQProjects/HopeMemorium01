@@ -22,7 +22,7 @@ const Sanchuary = () => {
           <div className="w-[50%] h-[90%] flex flex-col">
             <div>
               <div className="about_mission px-2">
-                <p2> {t("san_h1")}</p2>
+                <p>• {t("san_h1")}</p>
               </div>
               <h2 className="text-3xl font-bold pt-5"> {t("san_h2")}</h2>
               <p className="pt-3">
@@ -82,7 +82,7 @@ const Sanchuary = () => {
           </div>
         </div>
         <div className="home_part_3 mb-20">
-          <p>{t("home_para_6")}</p>
+          <p>{t("san_subscribe")}</p>
           <Subscribe />
         </div>
       </div>

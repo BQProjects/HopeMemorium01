@@ -20,7 +20,7 @@ const Home = () => {
           <h2>{t("home_heading_2")}</h2>
           <p>{t("home_para_1")}</p>
           <p>{t("home_para_2")}</p>
-          <button>{t("join")}</button>
+          <button onClick={() => navigate("/journey")}>{t("join")}</button>
         </div>
         <div className="home_2">
           <div className="home_part_2">

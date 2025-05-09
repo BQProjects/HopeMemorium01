@@ -24,7 +24,7 @@ const About = () => {
           }}
         >
           <div className="about_vision text-white mt-3">
-            <p2> {t("about_h1")}</p2>
+            <p> • {t("about_h1")}</p>
           </div>
           <div className="mt-4">
             <p className="text-white w-full px-[3%] ">
@@ -49,7 +49,7 @@ const About = () => {
         <div className="about_part_2">
           <div className="about_2_1">
             <div className="about_vision px-2">
-              <p2> {t("about_h2")}</p2>
+              <p> • {t("about_h2")}</p>
             </div>
           </div>
           <div className="about_2_2">
@@ -67,15 +67,15 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="home_part_3 mt-12">
-          <p>{t("home_para_6")}</p>
+        <div className="home_part_3 mt-20">
+          <p>{t("about_subscribe")}</p>
           <Subscribe />
         </div>
 
         <div className="about_part_6">
           <div className="about_part_6_1">
             <div className="about_vision">
-              <p2> {t("about_h6")}</p2>
+              <p> • {t("about_h6")}</p>
             </div>
           </div>
           <div className="about_6_2">
@@ -111,13 +111,19 @@ const About = () => {
                   <span>{t("about_p21")} </span>
                   {t("about_p22")}{" "}
                 </h3>
-                <p>
-                  • <span>{t("about_p23")}</span>
-                  {t("about_p24")}
+                <p className="flex items-start gap-2">
+                  <div>• </div>
+                  <div>
+                    <span>{t("about_p23")}</span>
+                    {t("about_p24")}
+                  </div>
                 </p>
-                <p>
-                  • <span>{t("about_p25")}</span>
-                  {t("about_p26")}
+                <p className="flex items-start gap-2">
+                  <div>• </div>
+                  <div>
+                    <span>{t("about_p25")}</span>
+                    {t("about_p26")}
+                  </div>
                 </p>
                 <h3>
                   {t("about_p27")} <span>{t("about_p28")}</span>

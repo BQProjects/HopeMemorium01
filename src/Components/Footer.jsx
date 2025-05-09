@@ -30,10 +30,19 @@ const Footer = () => {
         <div className="footer_part_2">
           <h2>{t("title")}</h2>
           <div className="footer_list mt-3">
-            <p>{t("nav1")}</p>
-            <p>{t("nav2")}</p>
-            <p>{t("nav3")}</p>
-            <p>{t("nav4")}</p>
+            <p className="cursor-pointer" onClick={() => navigate("/")}>
+              {t("nav1")}
+            </p>
+            <p className="cursor-pointer" onClick={() => navigate("/about")}>
+              {" "}
+              {t("nav2")}
+            </p>
+            <p className="cursor-pointer" onClick={() => navigate("/san")}>
+              {t("nav3")}
+            </p>
+            <p className="cursor-pointer" onClick={() => navigate("/maps")}>
+              {t("nav4")}
+            </p>
           </div>
         </div>
         <div className="footer_part_2">
@@ -62,8 +71,11 @@ const Footer = () => {
         </div>
         <div>
           {" "}
-          <button className="btn text-black mt-1 ">
-            {t("enquiry_button")}
+          <button
+            onClick={() => navigate("/journey")}
+            className="btn text-black mt-1 "
+          >
+            • {t("enquiry_button")}
           </button>
         </div>
       </div>
