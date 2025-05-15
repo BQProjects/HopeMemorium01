@@ -9,7 +9,7 @@ const Journey = () => {
   return (
     <Wrapper>
       <div
-        className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col"
+        className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col title"
         style={{
           backgroundColor: "rgba(247, 251, 226, 1)",
         }}

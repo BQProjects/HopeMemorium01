@@ -12,7 +12,7 @@ const Sanchuary = () => {
   return (
     <Wrapper>
       <div
-        className="w-full flex flex-col justify-start items-center"
+        className="w-full flex flex-col justify-start items-center title"
         style={{
           backgroundColor: "rgba(247, 251, 226, 1)",
         }}

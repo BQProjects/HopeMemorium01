@@ -19,7 +19,7 @@
     justify-content: center;
     gap: 0;
 
-    background-image: url("../assets/home_bg_1.png");
+    background-image: url("../assets/home_page.png");
     background-size: cover;       
     background-position: center;   
     background-repeat: no-repeat;  
@@ -176,10 +176,10 @@
         font-size: small;
     }
     .home_part_1 h1 {
-        font-size: 34px;
+        font-size: 27px;
     }
     .home_part_1 h2 {
-        font-size: 20px;
+        font-size: 18px;
     }
     .home_2 {
         height: 240vh;

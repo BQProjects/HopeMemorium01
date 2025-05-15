@@ -13,4 +13,13 @@ body {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
   }
+
+  @media screen and (max-width: 900px) {
+    .title h1 {
+      font-size: 26px;
+    }
+    .title h2 {
+      font-size: 18px;
+    }
+  }
   

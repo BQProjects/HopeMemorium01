@@ -1,7 +1,9 @@
 import React from "react";
 import "./Subscribe.css";
+import { useTranslation } from "react-i18next";
 
 const Subscribe = () => {
+  const { t } = useTranslation();
   return (
     <div className="subscribe">
       <input
@@ -9,7 +11,7 @@ const Subscribe = () => {
         placeholder="Enter your Email Address"
         className="text-black placeholder:text-gray-500"
       />
-      <button>Subscribe Now!</button>
+      <button>{t("subscribe")}</button>
     </div>
   );
 };

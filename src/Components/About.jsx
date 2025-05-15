@@ -17,7 +17,7 @@ const About = () => {
   return (
     <Wrapper>
       <div className="about">
-        <div className="w-full flex items-center justify-center gap-1 mt-[19vh] mb-[7vh] flex-col">
+        <div className="w-full flex items-center justify-center gap-1 mt-[19vh] mb-[7vh] flex-col title ">
           <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
           <h2 className="text-xl font-bold text-center">
             {t("home_heading_2")}
