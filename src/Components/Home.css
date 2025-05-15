@@ -50,8 +50,6 @@
 }
 
 .home_part_1 button {
-    height: 6vh;
-    width: 13vw;
     border: none;
     border-radius: 30px;
     font-size: 15px;
@@ -63,7 +61,7 @@
 
 .home_2 {
     width: 100%;
-    height: 100dvh;
+    height: 120dvh;
     margin-bottom: 10vh;
     margin-top: 3dvh;
     display: flex;
@@ -75,7 +73,7 @@
 
 .home_part_2 {
     width: 90%;
-    height: 45dvh;
+    height: 65vh;
     display: flex;
     justify-content: space-evenly;
     padding: 25px;
@@ -87,11 +85,12 @@
 .home_part_2_section {
     position: relative;
     width: 28%;
-    height: 80%;
+    height: 90%;
     margin-top: 5%;
     border: 1px solid gray;
     padding-left: 1rem;
     padding-top: 1rem;
+    padding-bottom: 10px;
     border-radius: 20px;
     background-color: rgba(247, 251, 226, 1);
 
@@ -116,22 +115,23 @@
 }
 
 .home_part_2_section h3 {
-    font-size: small;
+    font-size: medium;
     margin-top: 14px;
+    font-weight: bold;
     font-family: "Inter", sans-serif;
 }
 
 .home_part_2_section p {
     font-family: "Inter", sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 5px;
     width: 95%;
 }
 
 
-.home_part_3 {
-    width: 80%;
-    height: 47dvh;
+.home_part_3_for_home {
+    width: 100%;
+    height: 47vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,11 +142,68 @@
     color: white;
     overflow: hidden;
     margin-top: 4vh;
+    padding: 4rem;
 }
-.home_part_3 p {
-    width: 40%;
+.home_part_3_for_home p {
+    width: 50%;
     text-align: center;
     font-size: 16px;
     margin-bottom: 1rem;
 
 }
+
+
+@media screen and (max-width: 1200px) {
+    .home_part_2_section {
+        width: 31%;
+    
+    }
+    .home_part_2_section p {
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        margin-top: 5px;
+        width: 95%;
+    }
+    .home_part_3_for_home p  {
+        width: 60vw;
+    }
+    
+  }
+
+  @media screen and (max-width: 900px) { 
+    .home_part_1 p {
+        width: 90%;
+        font-size: small;
+    }
+    .home_part_1 h1 {
+        font-size: 34px;
+    }
+    .home_part_1 h2 {
+        font-size: 20px;
+    }
+    .home_2 {
+        height: 240vh;
+    }
+    .home_part_2 {
+        flex-direction: column;
+        align-items: center;
+        height: 180vh;
+    }
+    .home_part_2_section {
+        width: 92%;
+    }
+
+    .home_part_3_for_home {
+        padding: 1rem;
+    }
+    .home_part_3_for_home p {
+        width: 90%;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 1rem;
+    
+    }
+
+
+  }
+  

@@ -12,14 +12,14 @@ const Footer = () => {
   const navigate = useNavigate();
   return (
     <div
-      className="w-full h-[45vh] "
+      className="w-full h-[50vh] container-f  "
       style={{
         backgroundColor: "rgba(61, 42, 68, 1)",
         color: "white",
       }}
     >
-      <div className="flex items-start justify-between px-8 py-2 pt-7 text-sm">
-        <div className="w-[35%] ml-7 flex flex-col items-start justify-start gap-3 ">
+      <div className="flex items-start justify-between px-8 py-2 pt-7 text-sm foot_8">
+        <div className="w-[35%] ml-7 flex flex-col items-start justify-start gap-3 foot_3 ">
           <div className="flex items-center justify-start gap-2">
             <img src={logo} alt="Nothing" className="h-7 w-7 rounded-[50%]" />
             <p>{t("title")}</p>
@@ -52,20 +52,20 @@ const Footer = () => {
             <p>{t("terms")}</p>
           </div>
         </div>
-        <div className="footer_part_2 mr-14">
+        <div className="footer_part_2 mr-14 foot_5">
           <h2>{t("contact")}</h2>
           <div className="footer_list  mt-3">
             <p className="phone_no flex items-center justify-start gap-4">
               {" "}
-              <LocalPhoneOutlinedIcon /> +91 6292222221
+              <LocalPhoneOutlinedIcon className="icon_1" /> +91 6292222221
             </p>
             <p className="email_id  flex items-center justify-start gap-5 mt-1">
-              <EmailOutlinedIcon /> Email Adress
+              <EmailOutlinedIcon className="icon_1" /> Email Adress
             </p>
           </div>
         </div>
       </div>
-      <div className="flex items-start justify-between px-16 mt-15">
+      <div className="flex items-start justify-between px-16 mt-15 foot_4 ">
         <div>
           <Subscribe />
         </div>
@@ -73,7 +73,7 @@ const Footer = () => {
           {" "}
           <button
             onClick={() => navigate("/journey")}
-            className="btn text-black mt-1 "
+            className="btn_foo text-black mt-1 "
           >
             • {t("enquiry_button")}
           </button>

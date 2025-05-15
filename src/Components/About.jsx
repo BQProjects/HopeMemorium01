@@ -17,8 +17,14 @@ const About = () => {
   return (
     <Wrapper>
       <div className="about">
+        <div className="w-full flex items-center justify-center gap-1 mt-[19vh] mb-[7vh] flex-col">
+          <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
+          <h2 className="text-xl font-bold text-center">
+            {t("home_heading_2")}
+          </h2>
+        </div>
         <div
-          className="w-[87%] p-4 rounded-3xl mt-[15vh] mb-[9vh]"
+          className="w-[87%] p-4 rounded-3xl  mb-[9vh]"
           style={{
             backgroundColor: "rgba(61, 42, 68, 1)",
           }}
@@ -67,7 +73,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="home_part_3 mt-20">
+        <div className="home_part_3_for_about mt-20">
           <p>{t("about_subscribe")}</p>
           <Subscribe />
         </div>

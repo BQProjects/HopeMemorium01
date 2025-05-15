@@ -2,16 +2,26 @@ import React from "react";
 import Wrapper from "./Wrapper";
 import { useTranslation } from "react-i18next";
 import Subscribe from "./Subscribe";
+import "./Journey.css";
 
 const Journey = () => {
   const { t } = useTranslation();
   return (
     <Wrapper>
       <div
+        className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col"
         style={{
           backgroundColor: "rgba(247, 251, 226, 1)",
         }}
-        className="w-full h-[65vh] flex flex-col justify-center items-center"
+      >
+        <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
+        <h2 className="text-xl font-bold text-center">{t("home_heading_2")}</h2>
+      </div>
+      <div
+        style={{
+          backgroundColor: "rgba(247, 251, 226, 1)",
+        }}
+        className="w-full h-[65vh] flex flex-col justify-start items-center jour pt-[10vh]"
       >
         <div
           className="px-16 py-2 rounded-xl"

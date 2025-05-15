@@ -34,3 +34,25 @@ span {
     font-weight: bold;
 }
 
+@media screen and (max-width: 1200px) {
+    .subscribe {
+        width: 60vw;
+    }
+ }
+
+ @media screen and (max-width: 900px) { 
+    .subscribe {
+        width: 95vw;
+        height: 2rem;
+        padding: 2px;
+    }
+    .subscribe button {
+        width: 35%;
+        font-size: 12px;
+        height: 1.8rem;
+    }
+    .subscribe input {
+        font-size: small;
+    }
+ }
+

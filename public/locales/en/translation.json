@@ -1,6 +1,7 @@
 {
     "welcome" : "welcome to my website" ,
     "title" : "Hope Memorium" , 
+    "title_capital" : "HOPE MEMORIUM" ,
     "nav1" : "Home Page" ,
     "nav2" : "About us" ,
     "nav3" : "Sanctuary Gardens" ,
@@ -14,7 +15,7 @@
     "terms" : "Terms & Conditions",
     "contact" : "Contact" ,
     "copyright" : "© 2025 — Hope Memorium . All Rights Reserved" ,
-    "home_heading_2" : "A Sanctuary of Faith in the Holy Land" ,
+    "home_heading_2" : "Where Your Faith Takes Root. One Square Foot at a Time" ,
     "home_para_1" : "For centuries, believers have journeyed to the Holy Land to walk in the footsteps of Christ, to pray, to connect, and to find meaning in the sacred places where faith was born."  ,
     "home_para_2" : "Now, Hope Memorium offers a new way to deepen that connection—through the creation of Sanctuary Gardens, nestled across the Holy Land, where faith and heritage are preserved for generations to come." ,
     "join" : "Join the Journey" ,
@@ -141,7 +142,35 @@
     "maps_p18" : "in the future." ,
     "maps_p19" : "A visual connection to the land that has been a place of faith and pilgrimage for centuries." ,
     "about_subscribe" : "Hope Memorium is not an investment; it is an act of faith. It is an opportunity to participate in the spiritual and historical continuity of Christianity in the land where it all began." ,
-    "san_subscribe" : "The first phase of Hope Memorium invites believers to explore, reflect, and register their interest. As we prepare to unveil this sacred initiative, we welcome all who feel called to join us."
+    "san_subscribe" : "The first phase of Hope Memorium invites believers to explore, reflect, and register their interest. As we prepare to unveil this sacred initiative, we welcome all who feel called to join us.",
+    "enquiry" : "Enquiry" , 
+    "home_p1" : "HOPE " , 
+    "home_p2" : "stands for " ,
+    "home_p3" : "Holy Ownership of Perpetual " ,
+    "home_p4" : "Estates—a sacred opportunity to become a steward of the land where Christianity began. " ,
+    "home_p5" : "Memorium " ,
+    "home_p6" : "honors the past—those who have walked before us, shaping the history of faith. Together, ",
+    "home_p7" : "Hope Memorium " , 
+    "home_p8" : "bridges time, uniting generations of believers in a shared mission to protect and preserve this sacred land.",
+    "home_p9" : "On the shores of the ",
+    "home_p10" : "Sea of Galilee, ",
+    "home_p11" : "where Jesus once walked and taught, lies the ancient town of " ,
+    "home_p12" : "Magdala—" ,
+    "home_p13" : "a place of profound biblical significance. It is believed to be the hometown of " ,
+    "home_p14" : "Mary Magdalene, ",
+    "home_p15" : "one of Christ’s closest followers, and a setting for his miracles and teachings. ",
+    "home_p16" : "Here, along these sacred waters, we are planting the first " ,
+    "home_p17" : "Sanctuary Garden—" ,
+    "home_p18" : "a peaceful space for prayer, reflection, and spiritual stewardship.",
+    "home_p19" : "In the coming months, believers will have the opportunity to " ,
+    "home_p20" : "steward a fractional parcel " ,
+    "home_p21" : "of the" ,
+    "home_p22" : "Sanctuary Gardens " , 
+    "home_p23" : "forging a lasting connection to the Holy Land. These " ,
+    "home_p24" : "sacred parcels " ,
+    "home_p25" : "though legally and spiritually anchored to each steward, will remain part of a collective mission—preserving and sustaining Christianity’s presence in the land of its origin."
+
+    
 
 
 

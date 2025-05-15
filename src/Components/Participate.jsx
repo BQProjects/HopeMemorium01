@@ -19,7 +19,18 @@ const Participate = () => {
         }}
       >
         <div
-          className="w-full h-screen flex flex-col items-center justify-center"
+          className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col"
+          style={{
+            backgroundColor: "rgba(247, 251, 226, 1)",
+          }}
+        >
+          <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
+          <h2 className="text-xl font-bold text-center">
+            {t("home_heading_2")}
+          </h2>
+        </div>
+        <div
+          className="w-full h-screen flex flex-col items-center justify-start pt-[10vh] par_3"
           style={{
             backgroundColor: "rgba(247, 251, 226, 1)",
           }}
@@ -36,8 +47,8 @@ const Participate = () => {
             </h2>
             <p className="text-center w-[60%] mt-4">{t("par_p1")}</p>
           </div>
-          <div className=" w-[90%] flex items-center justify-center  mt-20 ">
-            <div className="flex flex-col  items-center justify-start gap-3 w-[90%]  ">
+          <div className=" w-[90%] flex items-start justify-center  mt-20 par_1 ">
+            <div className="flex flex-col  items-center justify-start gap-3 w-[90%] par_2  ">
               <div
                 className="w-16 h-16 flex items-center justify-center relative rounded-[50%]"
                 style={{
@@ -57,7 +68,7 @@ const Participate = () => {
                 {t("par_p6")}
               </p>
             </div>
-            <div className="   flex flex-col  items-center justify-start gap-3 w-[90%] ">
+            <div className="   flex flex-col  items-center justify-start gap-3 w-[90%] par_2 ">
               <div
                 className="w-16 h-16 flex items-center justify-center relative rounded-[50%]"
                 style={{
@@ -77,7 +88,7 @@ const Participate = () => {
                 {t("par_p11")}
               </p>
             </div>
-            <div className=" w-[90%]  flex flex-col  items-center justify-start  gap-3  ">
+            <div className=" w-[90%]  flex flex-col  items-center justify-start  gap-3  par_2 ">
               <div
                 className="w-16 h-16 flex items-center justify-center relative rounded-[50%]"
                 style={{
@@ -99,7 +110,7 @@ const Participate = () => {
             </div>
           </div>
         </div>
-        <div className="home_part_3 mb-16">
+        <div className="home_part_3_for_par mb-16">
           <p>{t("home_para_6")}</p>
           <Subscribe />
         </div>

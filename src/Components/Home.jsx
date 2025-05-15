@@ -16,11 +16,13 @@ const Home = () => {
     <Wrapper>
       <div className="__c">
         <div className="home_part_1">
-          <h1>{t("title")}</h1>
-          <h2>{t("home_heading_2")}</h2>
+          <h1>{t("title_capital")}</h1>
+          <h2 className="text-center">{t("home_heading_2")}</h2>
           <p>{t("home_para_1")}</p>
           <p>{t("home_para_2")}</p>
-          <button onClick={() => navigate("/journey")}>{t("join")}</button>
+          <button className="px-4 py-3" onClick={() => navigate("/journey")}>
+            {t("join")}
+          </button>
         </div>
         <div className="home_2">
           <div className="home_part_2">
@@ -37,7 +39,16 @@ const Home = () => {
                 <VolunteerActivismOutlinedIcon />
               </div>
               <h3>{t("home_heading_3")}</h3>
-              <p>{t("home_para_3")}</p>
+              <p>
+                <span>{t("home_p1")}</span>
+                {t("home_p2")}
+                <span>{t("home_p3")}</span>
+                {t("home_p4")}
+                <span>{t("home_p5")}</span>
+                {t("home_p6")}
+                <span>{t("home_p7")}</span>
+                {t("home_p8")}
+              </p>
             </div>
             <div className="home_part_2_section">
               <div className="attch_logo">
@@ -52,7 +63,18 @@ const Home = () => {
                 <HistoryIcon />
               </div>
               <h3>{t("home_heading_4")}</h3>
-              <p>{t("home_para_4")}</p>
+              <p>
+                {t("home_p9")}
+                <span>{t("home_p10")}</span>
+                {t("home_p11")}
+                <span>{t("home_p12")}</span>
+                {t("home_p13")}
+                <span>{t("home_p4")}</span>
+                {t("home_p15")}
+                {t("home_p16")}
+                <span>{t("home_p17")}</span>
+                {t("home_p18")}
+              </p>
             </div>
 
             <div className="home_part_2_section">
@@ -68,10 +90,18 @@ const Home = () => {
                 <ChurchOutlinedIcon />
               </div>
               <h3>{t("home_heading_5")}</h3>
-              <p>{t("home_para_5")}</p>
+              <p>
+                {t("home_p19")}
+                <span>{t("home_p20")}</span>
+                {t("home_p21")}
+                <span>{t("home_p22")}</span>
+                {t("home_p23")}
+                <span>{t("home_p24")}</span>
+                {t("home_p25")}
+              </p>
             </div>
           </div>
-          <div className="home_part_3">
+          <div className="home_part_3_for_home ">
             <p>{t("home_para_6")}</p>
             <Subscribe />
           </div>

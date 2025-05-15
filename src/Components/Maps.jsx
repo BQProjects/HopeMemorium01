@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import { GoogleMap, LoadScript, OverlayView } from "@react-google-maps/api";
 import temp from "../assets/temp.jpeg";
 import { FaPlus } from "react-icons/fa6";
@@ -17,6 +18,8 @@ import about2 from "../assets/about2.png";
 
 const Maps = () => {
   const center = { lat: 32.825795, lng: 35.513093 };
+  const [selj, setSelJ] = useState(null);
+  const [seli, setSelI] = useState(null);
   const [Mapcenter, setMapCenter] = useState(center);
   const [popUp, setPopUp] = useState(null);
   const [zoom, setZoom] = useState(18);
@@ -38,8 +41,36 @@ const Maps = () => {
     cursor: "pointer",
   };
 
+  function useWindowSize() {
+    const [size, setSize] = useState({
+      width: window.innerWidth,
+      height: window.innerHeight,
+    });
+
+    useEffect(() => {
+      const handleResize = () =>
+        setSize({ width: window.innerWidth, height: window.innerHeight });
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    return size;
+  }
+
+  const { width } = useWindowSize();
+  const isMobile = width < 768;
+  const isTab = width < 850;
   return (
     <Wrapper>
+      <div
+        className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col"
+        style={{
+          backgroundColor: "rgba(247, 251, 226, 1)",
+        }}
+      >
+        <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
+        <h2 className="text-xl font-bold text-center">{t("home_heading_2")}</h2>
+      </div>
       <div
         style={{
           width: "100vw",
@@ -124,10 +155,10 @@ const Maps = () => {
           <div
             style={{
               position: "absolute",
-              width: "25vw",
+              width: isMobile ? "80vw" : "25vw",
               height: "31vh",
-              top: "40%",
-              left: pos === "left" ? "17%" : undefined,
+              top: isMobile ? "110%" : "75%",
+              left: isMobile ? "40%" : pos === "left" ? "17%" : undefined,
               right: pos === "right" ? "1%" : undefined,
               transform: "translate(-40%, -40%)",
               backgroundColor: "white",
@@ -565,17 +596,26 @@ const Maps = () => {
                             onClick={() => {
                               setPopUp(i * 50 + j + 1);
                               setZoom(19);
-
+                              setSelI(j);
+                              setSelJ(i);
                               if (j > 25) {
-                                setMapCenter({
-                                  lat: 32.82544,
-                                  lng: 35.514083,
-                                });
+                                if (isMobile) {
+                                  setMapCenter({
+                                    lat: 32.8256 - i * 0.000022 - j * 0.0000009,
+                                    lng: 35.5138 + j * 0.00002 - i * 0.000005,
+                                  });
+                                } else {
+                                  setMapCenter({
+                                    lat: 32.8256 - i * 0.000022 - j * 0.0000009,
+                                    lng: 35.5138 + j * 0.000012 - i * 0.000005,
+                                  });
+                                }
+
                                 setPos("left");
                               } else {
                                 setMapCenter({
-                                  lat: 32.825554,
-                                  lng: 35.513888,
+                                  lat: 32.8257 - i * 0.000022 - j * 0.0000009,
+                                  lng: 35.5134 + j * 0.00002 - i * 0.0000015,
                                 });
                                 setPos("right");
                               }
@@ -679,7 +719,7 @@ const Maps = () => {
           <div
             style={{
               height: "4vh",
-              width: "10vw",
+              width: isTab ? "40vw" : "17vw",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -693,8 +733,16 @@ const Maps = () => {
           >
             <p>• {t("maps_h1")}</p>
           </div>
-          <div className="w-[90%] mt-6 flex items-center justify-between mb-14">
-            <div className="w-[30%] p-2 flex flex-col justify-start items-center h-[50vh] bg-white rounded-xl">
+          <div
+            className={`w-[95%] mt-6 flex ${
+              isTab ? "flex-col" : "flex-row"
+            } items-center justify-between mb-14 gap-10`}
+          >
+            <div
+              className={` ${
+                isTab ? "w-[90%]" : "w-[35%]"
+              } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
+            >
               <img src={about2} className="w-[80%] h-30 mt-5" />
               <div
                 style={{
@@ -724,7 +772,11 @@ const Maps = () => {
                 {t("maps_p9")}
               </p>
             </div>
-            <div className="w-[30%] p-2 flex flex-col justify-start items-center h-[50vh] bg-white rounded-xl">
+            <div
+              className={`${
+                isTab ? "w-[90%]" : "w-[35%]"
+              } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
+            >
               <img src={about2} className="w-[80%] h-30 mt-5" alt="" />
               <div
                 style={{
@@ -744,7 +796,11 @@ const Maps = () => {
               </div>
               <p className="text-xs mt-4 w-[85%]">{t("maps_p10")}</p>
             </div>
-            <div className="w-[30%] p-2 flex flex-col justify-start items-center h-[50vh] bg-white rounded-xl">
+            <div
+              className={`${
+                isTab ? "w-[90%]" : "w-[35%]"
+              } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl"`}
+            >
               <img src={about2} className="w-[80%] h-30 mt-5" />
               <div
                 style={{

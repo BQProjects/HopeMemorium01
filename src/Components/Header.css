@@ -63,3 +63,57 @@
     background-color: rgba(247, 251, 226, 1);
     cursor: pointer;
 }
+
+.enquiry1 {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1200px) { 
+    .part2  {
+        gap: 10px;
+    }
+    .part2 a{
+        font-size: 13px;
+        cursor: pointer;
+    }
+    .part1 p {
+        display: none;
+    }
+
+    .enquiry2 {
+        display: none;
+    }
+    .enquiry1 {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 800px) { 
+    .conatiner {
+        width: 98%;
+    }
+    .part1 {
+        padding-left: 15px;
+    }
+    .part1 p {
+        display: block;
+    }
+    .part2 a{
+        display: none;
+    }
+    .btn {
+        display: none;
+    }
+    .btn2 {
+        height: 5vh;
+        width: 50%;
+        border-radius: 30px;
+        font-size: 12px;
+        background-color: rgba(247, 251, 226, 1);
+        cursor: pointer;
+        font-size: medium;
+    }
+}

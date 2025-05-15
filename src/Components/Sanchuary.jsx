@@ -17,9 +17,20 @@ const Sanchuary = () => {
           backgroundColor: "rgba(247, 251, 226, 1)",
         }}
       >
-        <div className="h-[100vh] w-[87%] pt-[18vh] flex  justify-center gap-6  ">
+        <div
+          className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col"
+          style={{
+            backgroundColor: "rgba(247, 251, 226, 1)",
+          }}
+        >
+          <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
+          <h2 className="text-xl font-bold text-center">
+            {t("home_heading_2")}
+          </h2>
+        </div>
+        <div className="h-[100vh] w-[87%] pt-[10vh] flex  justify-center gap-6 san ">
           <img src={san1} className="w-50% h-[87%]  " alt="" />
-          <div className="w-[50%] h-[90%] flex flex-col">
+          <div className="w-[50%] h-[90%] flex flex-col san_2">
             <div>
               <div className="about_mission px-2">
                 <p>• {t("san_h1")}</p>
@@ -34,8 +45,8 @@ const Sanchuary = () => {
                 {t("san_p6")}
               </p>
             </div>
-            <div className="w-[110%] h-[55%] -ml-[20%] bg-white mt-6 rounded-xl flex items-center justify-center gap-7">
-              <div className="h-[85%] w-[35%] border border-gray-200 rounded-xl p-3 ">
+            <div className="w-[110%] h-[55%] -ml-[20%] bg-white mt-6 rounded-xl flex items-center justify-center gap-7 san_1">
+              <div className="h-[85%] w-[35%] border border-gray-200 rounded-xl p-3 san_4">
                 <div
                   style={{
                     color: "rgba(217, 158, 100, 1)",
@@ -51,7 +62,7 @@ const Sanchuary = () => {
                   <span> {t("san_p10")}</span> {t("san_p11")}
                 </p>
               </div>
-              <div className="h-[85%] w-[55%] border border-gray-200 rounded-xl p-3">
+              <div className="h-[85%] w-[55%] border border-gray-200 rounded-xl p-3 san_5">
                 <div
                   style={{
                     color: "rgba(217, 158, 100, 1)",
@@ -81,7 +92,7 @@ const Sanchuary = () => {
             </div>
           </div>
         </div>
-        <div className="home_part_3 mb-20">
+        <div className="home_part_3_for_san mb-20">
           <p>{t("san_subscribe")}</p>
           <Subscribe />
         </div>

@@ -114,7 +114,7 @@
 
 .about_vision {
     height: 4vh;
-    width: 7vw;
+    width: 12vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,7 +127,7 @@
 
 
 
-.home_part_3 {
+.home_part_3_for_about {
     width: 100%;
     height: 47dvh;
     display: flex;
@@ -137,11 +137,12 @@
     background-size: cover; /* Changed */
     background-position: bottom;
     background-repeat: no-repeat;
+    padding: 4rem;
     color: white;
     overflow: hidden;
 }
 
-.home_part_3 p {
+.home_part_3_for_about p {
     width: 60%;
     text-align: center;
     font-size: 16px;
@@ -220,3 +221,62 @@
 .about_6_4 span {
     font-weight: bold;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .about_vision {
+        width: 12vw;
+    }
+    .about_part_3 {
+        width: 100%;
+        overflow-x: hidden;
+        padding: 15px;
+    }
+    .about_part_3 img {
+        width: 49%;
+    }
+    .about_6_2 {
+        gap: 1rem;
+    }
+    .about_6_same {
+
+        width: 30%;
+        height: 70vh
+    }
+    
+ }
+
+ @media screen and (max-width: 900px) {
+    .about_vision {
+        width: 30vw;
+    }
+    .about_part_3 {
+        width: 100%;
+        overflow-x: hidden;
+        padding: 15px;
+    }
+    .about_part_3 img {
+        width: 49%;
+    }
+    .about_6_2 {
+        flex-direction: column;
+        gap: 2rem;
+
+    }
+    .about_6_same {
+        height: 70vh;
+        width: 80%;
+    }
+    .about p {
+    font-size: small;
+
+    }
+    .home_part_3_for_about {
+        padding-left: 5px;
+    }
+    .home_part_3_for_about p {
+        font-size: small;
+        width: 90%;
+    }
+    
+ }
