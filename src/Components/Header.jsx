@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import "./Header.css";
 import logo from "../assets/logo.jpeg";
 import MenuIcon from "@mui/icons-material/Menu";
+import { motion, scale } from "framer-motion";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -134,17 +135,48 @@ const Header = () => {
           <p>{t("title")}</p>
         </div>
         <div className="part2">
-          <a onClick={() => navigate("/")}>{t("nav1")}</a>
-          <a onClick={() => navigate("/about")}>{t("nav2")}</a>
-          <a onClick={() => navigate("/san")}>{t("nav3")}</a>
-          <a onClick={() => navigate("/maps")}>{t("nav4")}</a>
-          <a onClick={() => navigate("/participate")}> {t("nav5")}</a>
-          <a onClick={() => navigate("/journey")}>{t("nav6")}</a>
+          <a
+            className=" py-1 hover:border-b hover:border-b-white "
+            onClick={() => navigate("/")}
+          >
+            {t("nav1")}
+          </a>
+          <a
+            className=" py-1 hover:border-b hover:border-b-white "
+            onClick={() => navigate("/about")}
+          >
+            {t("nav2")}
+          </a>
+          <a
+            className=" py-1 hover:border-b hover:border-b-white "
+            onClick={() => navigate("/san")}
+          >
+            {t("nav3")}
+          </a>
+          <a
+            className=" py-1 hover:border-b hover:border-b-white "
+            onClick={() => navigate("/maps")}
+          >
+            {t("nav4")}
+          </a>
+          <a
+            className=" py-1 hover:border-b hover:border-b-white "
+            onClick={() => navigate("/participate")}
+          >
+            {" "}
+            {t("nav5")}
+          </a>
+          <a
+            className=" py-1 hover:border-b hover:border-b-white "
+            onClick={() => navigate("/journey")}
+          >
+            {t("nav6")}
+          </a>
         </div>
         <div>
           <button
             onClick={() => navigate("/journey")}
-            className="btn z-20 text-black enquiry2"
+            className="btn z-20 text-black enquiry2 flex items-center justify-center gap-1"
           >
             • {t("enquiry_button")}
           </button>

@@ -45,10 +45,6 @@
     cursor: pointer;
 }
 
-.part2 a:hover {
-    color: rgba(247, 251, 226, 1);
-    font-weight: bold;
-}
 
 .part1 p {
     font-size: 14px;

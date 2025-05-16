@@ -15,6 +15,8 @@ import { RxCross2 } from "react-icons/rx";
 import logo from "../assets/logo.jpeg";
 import { useTranslation } from "react-i18next";
 import about2 from "../assets/about2.png";
+import InViewTopTransition from "./InViewTopTransition";
+import InViewFadeSlide from "./InViewFadeSlide";
 
 const Maps = () => {
   const center = { lat: 32.825795, lng: 35.513093 };
@@ -564,7 +566,7 @@ const Maps = () => {
               }}
             >
               {/* Grid for 1000 parcels */}
-              {zoom >= 18 && (
+              {zoom >= 17 && (
                 <React.Fragment>
                   <OverlayView
                     position={
@@ -715,135 +717,137 @@ const Maps = () => {
             </GoogleMap>
           </div>
         </div>
-        <div className="flex flex-col w-full items-center justify-start">
-          <div
-            style={{
-              height: "4vh",
-              width: isTab ? "40vw" : "17vw",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: "small",
-              border: "1px solid rgba(217, 158, 100, 1)",
-              borderRadius: "15px",
-              marginLeft: "2rem",
-              marginTop: "4rem",
-            }}
-            className=" px-2"
-          >
-            <p>• {t("maps_h1")}</p>
-          </div>
-          <div
-            className={`w-[95%] mt-6 flex ${
-              isTab ? "flex-col" : "flex-row"
-            } items-center justify-between mb-14 gap-10`}
-          >
+        <InViewFadeSlide duration={1.5}>
+          <div className="flex flex-col w-full items-center justify-start">
             <div
-              className={` ${
-                isTab ? "w-[90%]" : "w-[35%]"
-              } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
+              style={{
+                height: "4vh",
+                width: isTab ? "40vw" : "17vw",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontSize: "small",
+                border: "1px solid rgba(217, 158, 100, 1)",
+                borderRadius: "15px",
+                marginLeft: "2rem",
+                marginTop: "4rem",
+              }}
+              className=" px-2"
             >
-              <img src={about2} className="w-[80%] h-30 mt-5" />
-              <div
-                style={{
-                  height: "4vh",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "small",
-                  border: "1px solid rgba(217, 158, 100, 1)",
-                  borderRadius: "15px",
-                  paddingX: "1rem",
-                  marginTop: "2vh",
-                }}
-                className=" px-3"
-              >
-                <p>• {t("maps_h2")}</p>
-              </div>
-              <p className="text-xs w-[85%] mt-4">
-                {t("maps_p1")}
-                <span>{t("maps_p2")}</span>
-                {t("maps_p3")}
-                <span>{t("maps_h4")}</span>
-                {t("maps_p5")}
-                <span>{t("maps_p6")}</span>
-                {t("maps_p7")}
-                <span>{t("maps_p8")}</span>
-                {t("maps_p9")}
-              </p>
+              <p>• {t("maps_h1")}</p>
             </div>
             <div
-              className={`${
-                isTab ? "w-[90%]" : "w-[35%]"
-              } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
+              className={`w-[95%] mt-6 flex ${
+                isTab ? "flex-col" : "flex-row"
+              } items-center justify-between mb-14 gap-10`}
             >
-              <img src={about2} className="w-[80%] h-30 mt-5" alt="" />
               <div
-                style={{
-                  height: "4vh",
-                  paddingX: "1rem",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "small",
-                  border: "1px solid rgba(217, 158, 100, 1)",
-                  borderRadius: "15px",
-                  marginTop: "2vh",
-                }}
-                className=" px-3"
+                className={` ${
+                  isTab ? "w-[90%]" : "w-[35%]"
+                } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
               >
-                <p>• {t("maps_h3")}</p>
-              </div>
-              <p className="text-xs mt-4 w-[85%]">{t("maps_p10")}</p>
-            </div>
-            <div
-              className={`${
-                isTab ? "w-[90%]" : "w-[35%]"
-              } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl"`}
-            >
-              <img src={about2} className="w-[80%] h-30 mt-5" />
-              <div
-                style={{
-                  height: "4vh",
-                  paddingX: "1rem",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  fontSize: "small",
-                  border: "1px solid rgba(217, 158, 100, 1)",
-                  borderRadius: "15px",
-                  marginTop: "2vh",
-                }}
-                className=" px-3"
-              >
-                <p>• {t("maps_h4")}</p>
-              </div>
-              <p className="text-xs w-[85%] mt-4 flex items-start gap-2">
-                <div>• </div>{" "}
-                <div>
-                  {t("maps_p11")}
-                  <span>{t("maps_p12")}</span>
-                  {t("maps_p13")}
-                  <span>{t("maps_p14")}</span>
-                  {t("maps_p15")}
+                <img src={about2} className="w-[80%] h-30 mt-5" />
+                <div
+                  style={{
+                    height: "4vh",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "small",
+                    border: "1px solid rgba(217, 158, 100, 1)",
+                    borderRadius: "15px",
+                    paddingX: "1rem",
+                    marginTop: "2vh",
+                  }}
+                  className=" px-3"
+                >
+                  <p>• {t("maps_h2")}</p>
                 </div>
-              </p>
-              <p className="text-xs w-[85%] mt-1 flex items-start gap-2">
-                <div>• </div>
-                <div>
-                  {t("maps_p16")}
-                  <span>{t("maps_p17")}</span>
-                  {t("maps_p18")}
+                <p className="text-xs w-[85%] mt-4">
+                  {t("maps_p1")}
+                  <span>{t("maps_p2")}</span>
+                  {t("maps_p3")}
+                  <span>{t("maps_h4")}</span>
+                  {t("maps_p5")}
+                  <span>{t("maps_p6")}</span>
+                  {t("maps_p7")}
+                  <span>{t("maps_p8")}</span>
+                  {t("maps_p9")}
+                </p>
+              </div>
+              <div
+                className={`${
+                  isTab ? "w-[90%]" : "w-[35%]"
+                } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
+              >
+                <img src={about2} className="w-[80%] h-30 mt-5" alt="" />
+                <div
+                  style={{
+                    height: "4vh",
+                    paddingX: "1rem",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "small",
+                    border: "1px solid rgba(217, 158, 100, 1)",
+                    borderRadius: "15px",
+                    marginTop: "2vh",
+                  }}
+                  className=" px-3"
+                >
+                  <p>• {t("maps_h3")}</p>
                 </div>
-              </p>
-              <p className="text-xs w-[85%] mt-1 flex items-start gap-2">
-                {" "}
-                <div>• </div>
-                <div>{t("maps_p19")}</div>
-              </p>
+                <p className="text-xs mt-4 w-[85%]">{t("maps_p10")}</p>
+              </div>
+              <div
+                className={`${
+                  isTab ? "w-[90%]" : "w-[35%]"
+                } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl"`}
+              >
+                <img src={about2} className="w-[80%] h-30 mt-5" />
+                <div
+                  style={{
+                    height: "4vh",
+                    paddingX: "1rem",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    fontSize: "small",
+                    border: "1px solid rgba(217, 158, 100, 1)",
+                    borderRadius: "15px",
+                    marginTop: "2vh",
+                  }}
+                  className=" px-3"
+                >
+                  <p>• {t("maps_h4")}</p>
+                </div>
+                <div className="text-xs w-[85%] mt-4 flex items-start gap-2">
+                  <div>• </div>{" "}
+                  <div>
+                    {t("maps_p11")}
+                    <span>{t("maps_p12")}</span>
+                    {t("maps_p13")}
+                    <span>{t("maps_p14")}</span>
+                    {t("maps_p15")}
+                  </div>
+                </div>
+                <div className="text-xs w-[85%] mt-1 flex items-start gap-2">
+                  <div>• </div>
+                  <div>
+                    {t("maps_p16")}
+                    <span>{t("maps_p17")}</span>
+                    {t("maps_p18")}
+                  </div>
+                </div>
+                <div className="text-xs w-[85%] mt-1 flex items-start gap-2">
+                  {" "}
+                  <div>• </div>
+                  <div>{t("maps_p19")}</div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
+        </InViewFadeSlide>
       </div>
     </Wrapper>
   );
