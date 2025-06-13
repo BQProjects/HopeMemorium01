@@ -119,7 +119,7 @@ const Header = () => {
             </a>
             <button
               onClick={() => {
-                navigate("/journey");
+                navigate("/enquiry");
                 setMenu(false);
               }}
               className="btn2 text-black"
