@@ -21,6 +21,12 @@ const Enquiry = () => {
         backgroundPosition: "center",
       }}
     >
+      <button
+        onClick={() => navigate("/")}
+        className=" absolute top-9 right-9 text-gray-200 text-2xl"
+      >
+        X
+      </button>
       <form
         onSubmit={(e) => {
           e.preventDefault();

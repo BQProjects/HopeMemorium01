@@ -261,10 +261,12 @@
     .about_6_2 {
         flex-direction: column;
         gap: 2rem;
+        height: fit-content;
+        padding-bottom: 3rem;
 
     }
     .about_6_same {
-        height: 70vh;
+        height: fit-content;
         width: 80%;
     }
     .about p {

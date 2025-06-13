@@ -51,7 +51,7 @@ const Sanchuary = () => {
                 </p>
               </div>
               <div className="w-[110%] h-[55%] -ml-[20%] bg-white mt-6 rounded-xl flex items-center justify-center gap-7 san_1">
-                <div className="h-[85%] w-[35%] border border-gray-200 rounded-xl p-3 san_4">
+                <div className="h-[250px] w-[35%] border border-gray-200 rounded-xl p-3 san_4">
                   <div
                     style={{
                       color: "rgba(217, 158, 100, 1)",
@@ -67,7 +67,7 @@ const Sanchuary = () => {
                     <span> {t("san_p10")}</span> {t("san_p11")}
                   </p>
                 </div>
-                <div className="h-[85%] w-[55%] border border-gray-200 rounded-xl p-3 san_5">
+                <div className="h-[250px] w-[55%] border border-gray-200 rounded-xl p-3 san_5">
                   <div
                     style={{
                       color: "rgba(217, 158, 100, 1)",

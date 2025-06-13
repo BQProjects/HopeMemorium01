@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <div className="sticky_container">
       <div
-        className={`flex gap-1 items-center justify-center fixed top-0.5 right-1 text-xs cursor-pointer ${
+        className={`flex gap-1 items-center justify-center fixed top-2 right-4 text-xs cursor-pointer ${
           window.location.pathname === "/" || window.location.pathname === ""
             ? "text-white"
             : "text-black"

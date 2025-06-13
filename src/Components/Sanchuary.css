@@ -49,7 +49,7 @@
         width: 70vw;
     }
     .san {
-        height: 260vh;
+        height: 225vh;
         flex-direction: column;
     }
 .san_2 {
@@ -71,7 +71,7 @@
 
 .san_4 {
     width: 90%;
-    height: 50vh;
+    height: fit-content;
 }
 .san_5 {
     width: 90%;
