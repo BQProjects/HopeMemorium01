@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <InViewOpacitySlide>
       <div
-        className="w-full h-[50vh] container-f  "
+        className="w-full h-fit container-f   "
         style={{
           backgroundColor: "rgba(61, 42, 68, 1)",
           color: "white",
@@ -74,14 +74,14 @@ const Footer = () => {
           <div>
             {" "}
             <button
-              onClick={() => navigate("/journey")}
+              onClick={() => navigate("/enquiry")}
               className="btn_foo text-black mt-1 "
             >
               • {t("enquiry_button")}
             </button>
           </div>
         </div>
-        <div className="text-xs w-full flex items-end justify-center mt-14">
+        <div className="text-xs w-full flex items-end justify-center mt-14 pb-5">
           {t("copyright")}
         </div>
       </div>

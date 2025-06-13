@@ -1,0 +1,10 @@
+@media screen and (max-width: 900px) { 
+    .container { 
+        width: 100%;
+        font-size: smaller;
+    }
+
+    .input_size {
+        width: 90%;
+    }
+}

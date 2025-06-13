@@ -7,6 +7,7 @@ import Journey from "./Journey";
 import Maps from "./Maps";
 import Participate from "./Participate";
 import Sanchuary from "./Sanchuary";
+import Enquiry from "./Enquiry";
 
 const RoutesW = () => {
   return (
@@ -19,6 +20,7 @@ const RoutesW = () => {
         <Route path="/maps" element={<Maps />} />
         <Route path="/participate" element={<Participate />} />
         <Route path="/san" element={<Sanchuary />} />
+        <Route path="/enquiry" element={<Enquiry />} />
       </Routes>
     </>
   );

@@ -17,6 +17,7 @@ import { useTranslation } from "react-i18next";
 import about2 from "../assets/about2.png";
 import InViewTopTransition from "./InViewTopTransition";
 import InViewFadeSlide from "./InViewFadeSlide";
+import { useNavigate } from "react-router-dom";
 
 const Maps = () => {
   const center = { lat: 32.825795, lng: 35.513093 };
@@ -62,6 +63,7 @@ const Maps = () => {
   const { width } = useWindowSize();
   const isMobile = width < 768;
   const isTab = width < 850;
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <div
@@ -356,6 +358,7 @@ const Maps = () => {
               }}
             >
               <button
+                onClick={() => navigate("/enquiry")}
                 style={{
                   width: "30%",
                   height: "70%",
@@ -364,6 +367,7 @@ const Maps = () => {
                   backgroundColor: "rgba(61,42 , 68 , 1)",
                   color: "white",
                   fontSize: "11px",
+                  cursor: "pointer",
                 }}
               >
                 Enquiry Now

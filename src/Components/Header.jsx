@@ -175,13 +175,13 @@ const Header = () => {
         </div>
         <div>
           <button
-            onClick={() => navigate("/journey")}
+            onClick={() => navigate("/enquiry")}
             className="btn z-20 text-black enquiry2 flex items-center justify-center gap-1"
           >
             • {t("enquiry_button")}
           </button>
           <button
-            onClick={() => navigate("/journey")}
+            onClick={() => navigate("/enquiry")}
             className="btn z-20 text-black enquiry1"
           >
             • {t("enquiry")}
