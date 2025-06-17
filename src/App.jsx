@@ -20,7 +20,12 @@ function App() {
 
   return (
     <>
-      <div className="App overflow-x-hidden ">
+      <div
+        className="App overflow-x-hidden "
+        style={{
+          backgroundColor: "rgba(247, 251, 226, 1)",
+        }}
+      >
         <RoutesW />
       </div>
     </>

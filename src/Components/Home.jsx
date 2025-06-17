@@ -21,7 +21,7 @@ const Home = () => {
         <InViewOpacitySlide>
           <div className="home_part_1">
             <h1>{t("title_capital")}</h1>
-            <h2 className="text-center">{t("home_heading_2")}</h2>
+            <h2 className="text-center ">{t("home_heading_2")}</h2>
             <p>{t("home_para_1")}</p>
             <p>{t("home_para_2")}</p>
             <button className="px-4 py-3" onClick={() => navigate("/journey")}>
@@ -36,8 +36,8 @@ const Home = () => {
                 <div className="attch_logo">
                   <AttachFileIcon
                     style={{
-                      width: "2rem",
-                      height: "2rem",
+                      width: "2.5rem",
+                      height: "2.5rem",
                     }}
                   />
                 </div>
@@ -60,8 +60,8 @@ const Home = () => {
                 <div className="attch_logo">
                   <AttachFileIcon
                     style={{
-                      width: "2rem",
-                      height: "2rem",
+                      width: "2.5rem",
+                      height: "2.5rem",
                     }}
                   />
                 </div>
@@ -87,8 +87,8 @@ const Home = () => {
                 <div className="attch_logo">
                   <AttachFileIcon
                     style={{
-                      width: "2rem",
-                      height: "2rem",
+                      width: "2.5rem",
+                      height: "2.5rem",
                     }}
                   />
                 </div>

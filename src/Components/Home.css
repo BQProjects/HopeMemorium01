@@ -4,15 +4,16 @@
 * {
     font-family: "Inter", sans-serif;
 }
-.__c {
-    margin: 0;
+/* .__c {
     overflow-x: hidden;
+    overflow-y: hidden;
     background-color: rgba(247, 251, 226, 1)
+    
   
-}
+} */
 .home_part_1 {
     width: 100%;
-    height: 100dvh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,7 +25,7 @@
     background-position: center;   
     background-repeat: no-repeat;  
 
-    color: white
+    color:  rgba(247, 251, 226, 1)
 }
 
 .home_part_1 h1 {
@@ -35,8 +36,8 @@
 }
 
 .home_part_1 h2 {
-    font-weight: 400;
-    font-size: 25px;
+    font-weight: 800;
+    font-size: 20px;
     margin-bottom: 0;
     margin-top: 4px;
     font-family: "Inter", sans-serif;
@@ -46,7 +47,7 @@
     width: 50%;
     text-align: center;
     font-family: "Inter", sans-serif;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .home_part_1 button {
@@ -56,14 +57,15 @@
     background-color: rgba(61, 42, 68, 1);
     cursor: pointer;
     color: white;
-    margin-top: 10px;
+    margin-top: 30px;
+    width: 15%;
 }
 
 .home_2 {
     width: 100%;
-    height: 120dvh;
+    height: 1050px;
     margin-bottom: 10vh;
-    margin-top: 3dvh;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,26 +74,26 @@
 }
 
 .home_part_2 {
-    width: 90%;
+    width: 98%;
     height: 470px;
     display: flex;
     justify-content: space-evenly;
     padding: 25px;
     gap: 15px;
-    margin-bottom: 10vh;
+    margin-bottom: 20vh;
    
 }
 
 .home_part_2_section {
     position: relative;
-    width: 28%;
+    width: 30%;
     height: 90%;
     margin-top: 5%;
     border: 1px solid gray;
     padding-left: 1rem;
     padding-top: 1rem;
     padding-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     background-color: rgba(247, 251, 226, 1);
 
 }
@@ -104,9 +106,10 @@
 }
 
 .icon_logo {
-    padding: 5px;
+    padding: 3px;
     background-color: rgba(61, 42, 68, 1);
-    width: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
     color: white;
     display: flex;
     align-items: center;
@@ -115,9 +118,9 @@
 }
 
 .home_part_2_section h3 {
-    font-size: medium;
+    font-size: 17px;
     margin-top: 14px;
-    font-weight: bold;
+    font-weight: 600;
     font-family: "Inter", sans-serif;
 }
 
@@ -131,7 +134,7 @@
 
 .home_part_3_for_home {
     width: 100%;
-    height: 47vh;
+    height: 420px;
     display: flex;
     flex-direction: column;
     justify-content: center;
