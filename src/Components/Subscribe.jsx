@@ -11,7 +11,7 @@ const Subscribe = () => {
         placeholder="Enter your Email Address"
         className="text-black placeholder:text-gray-500"
       />
-      <button>{t("subscribe")}</button>
+      <button className=" shadow-lg">{t("subscribe")}</button>
     </div>
   );
 };

@@ -21,7 +21,7 @@ const Sanchuary = () => {
       >
         <InViewTopTransition>
           <div
-            className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col"
+            className="w-full flex items-center justify-center gap-1 mt-48 flex-col"
             style={{
               backgroundColor: "rgba(247, 251, 226, 1)",
             }}
@@ -33,7 +33,7 @@ const Sanchuary = () => {
           </div>
         </InViewTopTransition>
         <InViewTopTransition delay={0.5}>
-          <div className="h-[100vh] w-[87%] pt-[10vh] flex  justify-center gap-6 san ">
+          <div className="h-[100vh] w-[87%]  flex  justify-center gap-6 san mt-20  ">
             <img src={san1} className="w-50% h-[87%]  " alt="" />
             <div className="w-[50%] h-[90%] flex flex-col san_2">
               <div>

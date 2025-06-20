@@ -10,9 +10,9 @@
 }
 
 .about_part_1 {
-    width: 90%;
+    width: 85%;
     height: 30vh;
-    margin-top: 14vh;
+    margin-top: 200px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -44,14 +44,13 @@
 
 
 .about_part_2 {
-    width: 87%;
+    width: 88%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     gap: 10%;
     padding: 1rem;
-    margin-top: 8vh;
 }
 
 .about_2_1 {
@@ -88,7 +87,6 @@
     align-items: center;
     justify-content: start;
     border-bottom: 1px solid rgba(128, 128, 128, 0.55);
-    padding-top: 5vh;
 }
 
 .about_2_table h2 {
@@ -105,9 +103,12 @@
 }
 
 .about_part_3 {
-    width: 90%;
+    width: 85%;
     display: flex;
-    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    gap: 2%;
+    
 
 }
 
@@ -280,6 +281,9 @@
     .home_part_3_for_about p {
         font-size: small;
         width: 90%;
+    }
+    .about_part_6{
+        height: fit-content;
     }
     
  }

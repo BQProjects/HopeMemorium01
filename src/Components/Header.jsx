@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <div className="sticky_container">
       <div
-        className={`flex gap-1 items-center justify-center absolute top-4 right-[8%] text-xs cursor-pointer ${
+        className={`flex gap-1 items-center justify-center absolute top-10 right-[9%] text-xs cursor-pointer ${
           window.location.pathname === "/" || window.location.pathname === ""
             ? "text-white"
             : "text-black"
@@ -67,7 +67,7 @@ const Header = () => {
             </div>{" "}
           </div>
 
-          <div className="flex flex-col text-white mt-10 w-full items-center gap-6 text-lg ">
+          <div className="flex flex-col text-white mt-10 w-full items-center gap-6 text-sm ">
             <a
               onClick={() => {
                 navigate("/");

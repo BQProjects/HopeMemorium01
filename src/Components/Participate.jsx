@@ -22,7 +22,7 @@ const Participate = () => {
       >
         <InViewTopTransition>
           <div
-            className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col"
+            className="w-full flex items-center justify-center gap-1  mt-48 flex-col"
             style={{
               backgroundColor: "rgba(247, 251, 226, 1)",
             }}
@@ -35,7 +35,7 @@ const Participate = () => {
         </InViewTopTransition>
         <InViewFadeSlide duration={1.5}>
           <div
-            className="w-full h-screen flex flex-col items-center justify-start pt-[10vh] par_3"
+            className="w-full h-screen flex flex-col items-center justify-start mt-20 par_3"
             style={{
               backgroundColor: "rgba(247, 251, 226, 1)",
             }}

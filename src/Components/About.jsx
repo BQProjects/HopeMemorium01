@@ -21,7 +21,7 @@ const About = () => {
     <Wrapper>
       <div className="about">
         <InViewTopTransition>
-          <div className="w-full flex items-center justify-center gap-1 mt-[19vh] mb-[7vh] flex-col title ">
+          <div className="w-full flex items-center justify-center gap-1 mt-56 flex-col title ">
             <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
             <h2 className="text-xl font-bold text-center">
               {t("home_heading_2")}
@@ -30,7 +30,7 @@ const About = () => {
         </InViewTopTransition>
         <InViewTopTransition delay={0.5}>
           <div
-            className="w-[87%] p-4 rounded-3xl  mb-[9vh]"
+            className="w-[87%] p-4 rounded-3xl mt-20"
             style={{
               backgroundColor: "rgba(61, 42, 68, 1)",
             }}
@@ -55,28 +55,28 @@ const About = () => {
         </InViewTopTransition>
 
         <InViewFadeSlide>
-          <div className="about_part_3">
+          <div className="about_part_3 mt-20">
             <img src={about2} alt="" />
             <img src={about3} alt="" />
           </div>
         </InViewFadeSlide>
         <InViewOpacitySlide>
-          <div className="about_part_2">
+          <div className="about_part_2 mt-20">
             <div className="about_2_1">
               <div className="about_vision px-2">
                 <p> • {t("about_h2")}</p>
               </div>
             </div>
             <div className="about_2_2">
-              <div className="about_2_table">
+              <div className="about_2_table py-9">
                 <h2>{t("about_h3")}</h2>
                 <p>{t("about_p7")}</p>
               </div>
-              <div className="about_2_table">
+              <div className="about_2_table py-9">
                 <h2>{t("about_h4")}</h2>
                 <p>{t("about_p8")}</p>
               </div>
-              <div className="about_2_table">
+              <div className="about_2_table py-9">
                 <h2>{t("about_h5")}</h2>
                 <p>{t("about_p9")}</p>
               </div>
