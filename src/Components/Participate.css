@@ -9,6 +9,10 @@
     border-radius: 15px;
 }
 
+.par_1 {
+    display: none;
+}
+
 
 
 
@@ -50,12 +54,18 @@
     .par_3 {
         height: 220vh;
     }
+
     .par_1 {
+        display: block;
         width: 95%;
         flex-direction: column;
         gap: 3rem;
         height: 140vh;
         align-items: center;
+    }
+
+    .par_hide {
+        display: none;
     }
 
     .par_2 h3  {

@@ -76,12 +76,18 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(247, 251, 226, 1);
+    background-image: url("../assets/bg_9.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
 .home_part_2 {
     width: 98%;
     height: 470px;
+
+
     display: flex;
     justify-content: space-evenly;
     padding: 25px;

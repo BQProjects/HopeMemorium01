@@ -8,6 +8,7 @@ import ChurchOutlinedIcon from "@mui/icons-material/ChurchOutlined";
 import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
 import InViewTopTransition from "./InViewTopTransition";
 import InViewFadeSlide from "./InViewFadeSlide";
+import san_1 from "../assets/san_1.webp";
 
 const Sanchuary = () => {
   const { t } = useTranslation();
@@ -34,7 +35,11 @@ const Sanchuary = () => {
         </InViewTopTransition>
         <InViewTopTransition delay={0.5}>
           <div className="h-[100vh] w-[87%]  flex  justify-center gap-6 san mt-20  ">
-            <img src={san1} className="w-50% h-[87%]  " alt="" />
+            <img
+              src={san_1}
+              className="w-[47%] h-[87%] object-cover rounded-xl   "
+              alt=""
+            />
             <div className="w-[50%] h-[90%] flex flex-col san_2">
               <div>
                 <div className="about_mission px-2">
