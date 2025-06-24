@@ -55,13 +55,13 @@ const About = () => {
         </InViewTopTransition>
 
         <InViewFadeSlide>
-          <div className="about_part_3 mt-20">
+          <div className="about_part_3 mt-36">
             <img src={about2} alt="" />
             <img src={about3} alt="" />
           </div>
         </InViewFadeSlide>
         <InViewOpacitySlide>
-          <div className="about_part_2 mt-20">
+          <div className="about_part_2 mt-36">
             <div className="about_2_1">
               <div className="about_vision px-2">
                 <p> • {t("about_h2")}</p>

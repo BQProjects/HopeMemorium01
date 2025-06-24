@@ -67,7 +67,7 @@ const Maps = () => {
   return (
     <Wrapper>
       <div
-        className="w-full flex items-center justify-center gap-1 pt-[19vh] flex-col title"
+        className="w-full flex items-center justify-center gap-1 mt-56 flex-col title"
         style={{
           backgroundColor: "rgba(247, 251, 226, 1)",
         }}
@@ -722,7 +722,7 @@ const Maps = () => {
           </div>
         </div>
         <InViewFadeSlide duration={1.5}>
-          <div className="flex flex-col w-full items-center justify-start">
+          <div className="flex flex-col w-full items-center justify-start mt-20">
             <div
               style={{
                 height: "4vh",
@@ -741,14 +741,14 @@ const Maps = () => {
               <p>• {t("maps_h1")}</p>
             </div>
             <div
-              className={`w-[95%] mt-6 flex ${
+              className={`w-[95%] mt-14 mb-28 flex ${
                 isTab ? "flex-col" : "flex-row"
               } items-center justify-between mb-14 gap-10`}
             >
               <div
                 className={` ${
                   isTab ? "w-[90%]" : "w-[35%]"
-                } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
+                } p-2 flex flex-col justify-start items-center h-[400px] bg-white rounded-xl`}
               >
                 <img src={about2} className="w-[80%] h-30 mt-5" />
                 <div
@@ -782,7 +782,7 @@ const Maps = () => {
               <div
                 className={`${
                   isTab ? "w-[90%]" : "w-[35%]"
-                } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl`}
+                } p-2 flex flex-col justify-start items-center h-[400px] bg-white rounded-xl`}
               >
                 <img src={about2} className="w-[80%] h-30 mt-5" alt="" />
                 <div
@@ -806,7 +806,7 @@ const Maps = () => {
               <div
                 className={`${
                   isTab ? "w-[90%]" : "w-[35%]"
-                } p-2 flex flex-col justify-start items-center h-[60vh] bg-white rounded-xl"`}
+                } p-2 flex flex-col justify-start items-center h-[400px] bg-white rounded-xl"`}
               >
                 <img src={about2} className="w-[80%] h-30 mt-5" />
                 <div
