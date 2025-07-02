@@ -45,16 +45,22 @@ const Home = () => {
                   <VolunteerActivismOutlinedIcon />
                 </div>
                 <h3>{t("home_heading_3")}</h3>
-                <p>
-                  <span>{t("home_p1")}</span>
-                  {t("home_p2")}
-                  <span>{t("home_p3")}</span>
-                  {t("home_p4")}
-                  <span>{t("home_p5")}</span>
-                  {t("home_p6")}
-                  <span>{t("home_p7")}</span>
-                  {t("home_p8")}
-                </p>
+                <div className="flex flex-col mt-1">
+                  <p>
+                    <span>{t("home_p1")}</span>
+                    {t("home_p2")}
+                    <span>{t("home_p3")}</span>
+                    {t("home_p4")}
+                  </p>
+
+                  <p>
+                    <span>{t("home_p5")}</span>
+
+                    {t("home_p6")}
+                    <span>{t("home_p7")}</span>
+                    {t("home_p8")}
+                  </p>
+                </div>
               </div>
               <div className="home_part_2_section">
                 <div className="attch_logo">
@@ -69,18 +75,22 @@ const Home = () => {
                   <HistoryIcon />
                 </div>
                 <h3>{t("home_heading_4")}</h3>
-                <p>
-                  {t("home_p9")}
-                  <span>{t("home_p10")}</span>
-                  {t("home_p11")}
-                  <span>{t("home_p12")}</span>
-                  {t("home_p13")}
-                  <span>{t("home_p4")}</span>
-                  {t("home_p15")}
-                  {t("home_p16")}
-                  <span>{t("home_p17")}</span>
-                  {t("home_p18")}
-                </p>
+                <div className="flex flex-col mt-1">
+                  <p>
+                    {t("home_p9")}
+                    <span>{t("home_p10")}</span>
+                    {t("home_p11")}
+                    <span>{t("home_p12")}</span>
+                    {t("home_p13")}
+                    <span>{t("home_p14")}</span>
+                    {t("home_p15")}
+                  </p>
+                  <p>
+                    {t("home_p16")}
+                    <span>{t("home_p17")}</span>
+                    {t("home_p18")}
+                  </p>
+                </div>
               </div>
 
               <div className="home_part_2_section">
@@ -96,7 +106,7 @@ const Home = () => {
                   <ChurchOutlinedIcon />
                 </div>
                 <h3>{t("home_heading_5")}</h3>
-                <p>
+                <p className="mt-1">
                   {t("home_p19")}
                   <span>{t("home_p20")}</span>
                   {t("home_p21")}

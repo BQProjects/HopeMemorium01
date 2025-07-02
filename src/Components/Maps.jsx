@@ -25,7 +25,7 @@ const Maps = () => {
   const [seli, setSelI] = useState(null);
   const [Mapcenter, setMapCenter] = useState(center);
   const [popUp, setPopUp] = useState(null);
-  const [zoom, setZoom] = useState(18);
+  const [zoom, setZoom] = useState(5);
   const [map, setMap] = useState(null);
   const [pos, setPos] = useState(null);
   const [directions, setDirection] = useState(false);
