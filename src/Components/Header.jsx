@@ -5,6 +5,7 @@ import "./Header.css";
 import logo from "../assets/logo.jpeg";
 import MenuIcon from "@mui/icons-material/Menu";
 import { motion, scale } from "framer-motion";
+import PulsatingDot from "./PulsatingDot.jsx";
 
 const Header = () => {
   const { t, i18n } = useTranslation();
@@ -176,15 +177,15 @@ const Header = () => {
         <div>
           <button
             onClick={() => navigate("/enquiry")}
-            className="btn z-20 text-black enquiry2 flex items-center justify-center gap-1"
+            className="btn z-20 text-black enquiry2 flex items-center justify-center gap-2"
           >
-            • {t("enquiry_button")}
+            <PulsatingDot /> {t("enquiry_button")}
           </button>
           <button
             onClick={() => navigate("/enquiry")}
-            className="btn z-20 text-black enquiry1"
+            className="btn z-20 text-black enquiry1 flex items-center justify-center gap-2"
           >
-            • {t("enquiry")}
+            <PulsatingDot /> {t("enquiry")}
           </button>
           {isMobile && (
             <div className="px-6" onClick={() => setMenu(true)}>

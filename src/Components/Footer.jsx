@@ -7,6 +7,7 @@ import "./Footer.css";
 import LocalPhoneOutlinedIcon from "@mui/icons-material/LocalPhoneOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import InViewOpacitySlide from "./InViewOpacitySlide";
+import PulsatingDot from "./PulsatingDot";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -75,9 +76,9 @@ const Footer = () => {
             {" "}
             <button
               onClick={() => navigate("/enquiry")}
-              className="btn_foo text-black mt-1 "
+              className="btn_foo text-black mt-1 flex items-center justify-center gap-2 "
             >
-              • {t("enquiry_button")}
+              <PulsatingDot /> {t("enquiry_button")}
             </button>
           </div>
         </div>
