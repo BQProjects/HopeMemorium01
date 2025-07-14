@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    padding-bottom: 20vh;
+    padding-bottom: 16vh;
     gap: 0;
 
     background-image: url("../assets/home_page.png");
@@ -42,7 +42,7 @@
 
 .home_part_1 h2 {
     font-weight: 700;
-    font-size: 49px;
+    font-size: 46px;
     margin-bottom: 0;
     margin-top: 4px;
     font-family: "Inter", sans-serif;
@@ -171,13 +171,13 @@
 
 
 
-@media screen and (max-width: 1420px) { 
+@media screen and (max-width: 1330px) { 
     .home_part_1 {
-        padding-bottom: 12vh;
+        padding-bottom: 9vh;
     }
 
     .home_part_1 h2 { 
-        font-size: 45px;
+        font-size: 44px;
     }
 
     .home_part_1 p {
@@ -218,10 +218,18 @@
     
   }
 
-  @media screen and (max-height: 650px) {
+  @media screen and (max-height: 700px) {
     .home_part_1 {
-        padding-bottom: 5vh;
+        padding-bottom: 4vh;
      }
+     .home_part_1 h2 {
+        font-size: 44px;
+     }
+
+     .home_part_1 p {
+        font-size: 15px;
+     }
+
     .home_part_1 button {
         margin-top: 15px;
     }
