@@ -42,7 +42,7 @@
 
 .home_part_1 h2 {
     font-weight: 700;
-    font-size: 47px;
+    font-size: 49px;
     margin-bottom: 0;
     margin-top: 4px;
     font-family: "Inter", sans-serif;
@@ -187,25 +187,17 @@
 
 }
 
-@media screen and (max-height: 650px) {
-    .home_part_1 {
-        padding-bottom: 5vh;
-     }
-    .home_part_1 button {
-        margin-top: 15px;
-    }
 
-}
 
 
 
 @media screen and (max-width: 1200px) {
     .home_part_1 {
-        padding-bottom: 5vh;
+        padding-bottom: 15vh;
     }
 
     .home_part_1 h2 {
-        font-size: 40px ;
+        font-size: 44px ;
     }
     .home_part_1 p {
         width: 60%;
@@ -225,6 +217,17 @@
     }
     
   }
+
+  @media screen and (max-height: 650px) {
+    .home_part_1 {
+        padding-bottom: 5vh;
+     }
+    .home_part_1 button {
+        margin-top: 15px;
+    }
+}
+
+
 
   @media screen and (max-width: 900px) { 
 
