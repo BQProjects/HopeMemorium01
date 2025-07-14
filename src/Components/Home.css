@@ -18,8 +18,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: end;
-    padding-bottom: 16vh;
     gap: 0;
 
     background-image: url("../assets/home_page.png");
@@ -42,7 +40,7 @@
 
 .home_part_1 h2 {
     font-weight: 700;
-    font-size: 46px;
+    font-size: 44px;
     margin-bottom: 0;
     margin-top: 4px;
     font-family: "Inter", sans-serif;
@@ -51,7 +49,7 @@
 }
 
 .home_part_1 p {
-    width: 50%;
+    width: 53%;
     text-align: center;
     font-family: "Inter", sans-serif;
     margin-top: 12px;
@@ -171,7 +169,7 @@
 
 
 
-@media screen and (max-width: 1330px) { 
+/* @media screen and (max-width: 1330px) { 
     .home_part_1 {
         padding-bottom: 9vh;
     }
@@ -185,38 +183,13 @@
   width: 55%;
     }
 
-}
+} */
 
 
 
 
 
-@media screen and (max-width: 1200px) {
-    .home_part_1 {
-        padding-bottom: 15vh;
-    }
 
-    .home_part_1 h2 {
-        font-size: 44px ;
-    }
-    .home_part_1 p {
-        width: 60%;
-    }
-    .home_part_2_section {
-        width: 31%;
-    
-    }
-    .home_part_2_section p {
-        font-family: "Inter", sans-serif;
-        font-size: 13px;
-        margin-top: 5px;
-        width: 95%;
-    }
-    .home_part_3_for_home p  {
-        width: 60vw;
-    }
-    
-  }
 
   @media screen and (max-height: 700px) {
     .home_part_1 {
@@ -245,6 +218,10 @@
     }
     .home_part_1 h1 {
         font-size: 27px;
+    }
+
+    .home_part_2 h2 {
+        font-size: 20px;
     }
 
     .home_part_1 button {
@@ -278,5 +255,32 @@
     }
 
 
+  }
+
+  @media screen and (max-width: 1300px) {
+    .home_part_1 {
+        padding-bottom: 15vh;
+    }
+
+    .home_part_1 h2 {
+        font-size: 35px ;
+    }
+    .home_part_1 p {
+        width: 60%;
+    }
+    .home_part_2_section {
+        width: 31%;
+    
+    }
+    .home_part_2_section p {
+        font-family: "Inter", sans-serif;
+        font-size: 13px;
+        margin-top: 5px;
+        width: 95%;
+    }
+    .home_part_3_for_home p  {
+        width: 60vw;
+    }
+    
   }
   

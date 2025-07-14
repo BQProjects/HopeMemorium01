@@ -19,7 +19,7 @@ const Home = () => {
     <Wrapper>
       <div className="__c">
         <InViewOpacitySlide>
-          <div className="home_part_1">
+          <div className="home_part_1 pt-56">
             <h1>{t("title_capital")}</h1>
             <h2 className="text-center ">{t("home_heading_2")}</h2>
             <p>{t("home_para_1")}</p>
