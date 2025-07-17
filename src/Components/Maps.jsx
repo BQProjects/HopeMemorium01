@@ -73,7 +73,7 @@ const Maps = () => {
         }}
       >
         <h1 className="text-[32px] font-bold">{t("title_capital")}</h1>
-        <h2 className="text-[45px] font-bold text-center">
+        <h2 className="text-[43px] w-[85%] font-bold text-center">
           {t("home_heading_2")}
         </h2>
       </div>
@@ -163,7 +163,7 @@ const Maps = () => {
               position: "absolute",
               width: isMobile ? "80vw" : "25vw",
               height: "31vh",
-              top: isMobile ? "110%" : "75%",
+              top: isMobile ? "110%" : "95%",
               left: isMobile ? "40%" : pos === "left" ? "17%" : undefined,
               right: pos === "right" ? "1%" : undefined,
               transform: "translate(-40%, -40%)",

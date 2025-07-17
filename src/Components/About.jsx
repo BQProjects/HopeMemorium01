@@ -23,7 +23,7 @@ const About = () => {
         <InViewTopTransition>
           <div className="w-full flex items-center justify-center gap-1 mt-56 flex-col title ">
             <h1 className="text-[32px] font-bold">{t("title_capital")}</h1>
-            <h2 className="text-[45px] font-bold text-center">
+            <h2 className="text-[43px] w-[85%] font-bold text-center">
               {t("home_heading_2")}
             </h2>
           </div>
