@@ -183,7 +183,7 @@ const Header = () => {
           </button>
           <button
             onClick={() => navigate("/enquiry")}
-            className="btn z-20 text-black enquiry1 flex items-center justify-center gap-2"
+            className="btn z-20 text-black enquiry1 flex items-center justify-center gap-2 px-5"
           >
             <PulsatingDot /> {t("enquiry")}
           </button>

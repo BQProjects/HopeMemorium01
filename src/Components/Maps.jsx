@@ -72,8 +72,10 @@ const Maps = () => {
           backgroundColor: "rgba(247, 251, 226, 1)",
         }}
       >
-        <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
-        <h2 className="text-xl font-bold text-center">{t("home_heading_2")}</h2>
+        <h1 className="text-[32px] font-bold">{t("title_capital")}</h1>
+        <h2 className="text-[45px] font-bold text-center">
+          {t("home_heading_2")}
+        </h2>
       </div>
       <div
         style={{
@@ -701,7 +703,14 @@ const Maps = () => {
                       }}
                       onClick={() => {
                         setMapCenter({ lat: 32.825467, lng: 35.514139 });
-                        setZoom(19);
+                        console.log(zoom);
+                        if (zoom >= 12) {
+                          setZoom(18);
+                        } else if (zoom === 18) {
+                          setZoom(zoom + 10);
+                        } else {
+                          setZoom(zoom + 7);
+                        }
                       }}
                     >
                       <MdOutlineLocationOn />

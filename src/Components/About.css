@@ -230,7 +230,7 @@
         width: 12vw;
     }
     .about_part_3 {
-        width: 100%;
+        width: 90%;
         overflow-x: hidden;
         padding: 15px;
     }
@@ -248,17 +248,21 @@
     
  }
 
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 850px) {
     .about_vision {
         width: 40vw;
     }
     .about_part_3 {
         width: 100%;
+        height: fit-content;
         overflow-x: hidden;
         padding: 15px;
     }
+
+
     .about_part_3 img {
         width: 49%;
+        height: 150px;
     }
     .about_6_2 {
         flex-direction: column;

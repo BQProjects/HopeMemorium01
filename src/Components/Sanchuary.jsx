@@ -27,8 +27,8 @@ const Sanchuary = () => {
               backgroundColor: "rgba(247, 251, 226, 1)",
             }}
           >
-            <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
-            <h2 className="text-xl font-bold text-center">
+            <h1 className="text-[32px] font-bold">{t("title_capital")}</h1>
+            <h2 className="text-[45px] font-bold text-center">
               {t("home_heading_2")}
             </h2>
           </div>
@@ -55,8 +55,8 @@ const Sanchuary = () => {
                   {t("san_p6")}
                 </p>
               </div>
-              <div className="w-[110%] h-[55%] -ml-[20%] bg-white mt-6 rounded-xl flex items-center justify-center gap-7 san_1">
-                <div className="h-[250px] w-[35%] border border-gray-200 rounded-xl p-3 san_4">
+              <div className="w-[110%] h-fit -ml-[20%] bg-white mt-6 rounded-xl flex items-center justify-center gap-7 py-3 san_1">
+                <div className="h-[290px] w-[35%] border border-gray-200 rounded-xl p-3 san_4">
                   <div
                     style={{
                       color: "rgba(217, 158, 100, 1)",
@@ -72,7 +72,7 @@ const Sanchuary = () => {
                     <span> {t("san_p10")}</span> {t("san_p11")}
                   </p>
                 </div>
-                <div className="h-[250px] w-[55%] border border-gray-200 rounded-xl p-3 san_5">
+                <div className="h-[290px] w-[55%] border border-gray-200 rounded-xl p-3 san_5">
                   <div
                     style={{
                       color: "rgba(217, 158, 100, 1)",
@@ -104,7 +104,7 @@ const Sanchuary = () => {
           </div>
         </InViewTopTransition>
         <InViewFadeSlide>
-          <div className="home_part_3_for_san mb-20">
+          <div className="home_part_3_for_san mb-20 mt-10">
             <p>{t("san_subscribe")}</p>
             <Subscribe />
           </div>

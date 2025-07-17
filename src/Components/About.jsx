@@ -22,8 +22,8 @@ const About = () => {
       <div className="about">
         <InViewTopTransition>
           <div className="w-full flex items-center justify-center gap-1 mt-56 flex-col title ">
-            <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
-            <h2 className="text-xl font-bold text-center">
+            <h1 className="text-[32px] font-bold">{t("title_capital")}</h1>
+            <h2 className="text-[45px] font-bold text-center">
               {t("home_heading_2")}
             </h2>
           </div>
@@ -56,8 +56,16 @@ const About = () => {
 
         <InViewFadeSlide>
           <div className="about_part_3 mt-36">
-            <img src={about2} alt="" />
-            <img src={about3} alt="" />
+            <img
+              src={about2}
+              alt=""
+              className="w-[30%] h-full object-cover rounded-4xl"
+            />
+            <img
+              src={about3}
+              alt=""
+              className="w-[70%] h-full object-cover rounded-4xl"
+            />
           </div>
         </InViewFadeSlide>
         <InViewOpacitySlide>
@@ -83,12 +91,7 @@ const About = () => {
             </div>
           </div>
         </InViewOpacitySlide>
-        <InViewFadeSlide direction={"right"}>
-          <div className="home_part_3_for_about mt-20">
-            <p>{t("about_subscribe")}</p>
-            <Subscribe />
-          </div>
-        </InViewFadeSlide>
+
         <InViewTopTransition duration={1}>
           <div className="about_part_6">
             <div className="about_part_6_1">
@@ -169,6 +172,12 @@ const About = () => {
             </div>
           </div>
         </InViewTopTransition>
+        <InViewFadeSlide direction={"right"}>
+          <div className="home_part_3_for_about mt-20 mb-16">
+            <p>{t("about_subscribe")}</p>
+            <Subscribe />
+          </div>
+        </InViewFadeSlide>
       </div>
     </Wrapper>
   );

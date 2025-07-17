@@ -17,8 +17,10 @@ const Journey = () => {
           backgroundColor: "rgba(247, 251, 226, 1)",
         }}
       >
-        <h1 className="text-4xl font-bold">{t("title_capital")}</h1>
-        <h2 className="text-xl font-bold text-center">{t("home_heading_2")}</h2>
+        <h1 className="text-[32px] font-bold">{t("title_capital")}</h1>
+        <h2 className="text-[45px] font-bold text-center">
+          {t("home_heading_2")}
+        </h2>
       </div>
       <div className="w-full flex items-center justify-center mt-20">
         <motion.div
